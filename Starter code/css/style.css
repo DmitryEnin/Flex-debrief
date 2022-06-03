@@ -11,4 +11,30 @@ body {
     width: 25%;
 }
 
-.row {}
+.row {
+    display: flex;
+    padding: 0 4px;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+img {
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 800px) {
+    img  {
+        flex-basis: 40%;
+        max-width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    img  {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
